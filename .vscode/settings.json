@@ -1,3 +1,6 @@
 {
-    "python.pythonPath": "env3/bin/python"
+    "python.pythonPath": "env3/bin/python",
+    "appService.zipIgnorePattern": [
+        ".vscode{,/**}"
+    ]
 }
