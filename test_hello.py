@@ -9,4 +9,8 @@ class TestMyApp(unittest.TestCase):
         rv = self.app.get('/')
         assert rv.status == '200 OK'
         assert b'Welcome' in rv.data
-        
+
+    def test_path(self):
+        rv = self.app.get('/random')
+        assert rv.status == '200 OK'
+        assert b'Welcome' in rv.data
